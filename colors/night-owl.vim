@@ -39,19 +39,36 @@ hi SpecialKey guifg=#ecc48d ctermfg=222 gui=NONE cterm=NONE
 hi Title guifg=#82aaff ctermfg=111 gui=bold cterm=bold
 hi Visual guifg=#d6deeb ctermfg=253 guibg=#2d2c5d ctermbg=236 gui=NONE cterm=NONE
 hi EndOfBuffer guifg=#444444 ctermfg=238 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
+
+" Generic language highlighting
+" Comment
+" https://github.com/sdras/night-owl-vscode-theme/blob/master/themes/Night%20Owl-color-theme.json#L249-L255
 hi Comment guifg=#637777 ctermfg=243 gui=italic cterm=italic
-hi Constant guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
+
+" hi Constant guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
 hi String guifg=#ecc48d ctermfg=222 gui=NONE cterm=NONE
-hi Identifier guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
+hi Number guifg=#F78C6C
+hi Boolean guifg=#ff5874
+
+hi Identifier guifg=#7fdbca
+hi Function guifg=#82aaff gui=italic
+
 hi Statement guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
-hi Operator guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
-hi Exception guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
+hi Keyword guifg=#c792ea
+hi Exception guifg=#c792ea gui=italic
+
 hi PreProc guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
+
 hi Type guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
 hi StorageClass guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
-hi htmlTag guifg=#637777 ctermfg=243 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link htmlEndTag htmlTag
+
 hi Todo guifg=#777777 ctermfg=243 guibg=#ecc48d ctermbg=222 gui=NONE cterm=NONE
+
+
+" TODO: Operator mode?
+hi Operator guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
+
+" JavaScript
 hi jsStorageClass guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi jsOperator guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi jsArrowFunction guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
@@ -87,6 +104,8 @@ hi javaScriptSpecial guifg=#f78c6c ctermfg=209 gui=NONE cterm=NONE
 hi javaScriptFunction guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi javaScriptStatement guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi javaScriptException guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
+
+" CSS
 hi scssSelectorName guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
 hi cssTagName guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
 hi cssClassName guifg=#addb67 ctermfg=149 gui=italic cterm=italic
@@ -114,6 +133,8 @@ hi cssBorderAttr guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
 hi cssValueLength guifg=#f78c6c ctermfg=209 gui=NONE cterm=NONE
 hi cssUnitDecorators guifg=#fbec9f ctermfg=229 gui=NONE cterm=NONE
 hi cssIdentifier guifg=#f4d554 ctermfg=221 gui=italic cterm=italic
+
+" Markdown
 hi markdownHeadingDelimiter guifg=#637777 ctermfg=243 gui=NONE cterm=NONE
 hi markdownCodeDelimiter guifg=#ecc48d ctermfg=222 gui=NONE cterm=NONE
 hi markdownCode guifg=#aaaaaa ctermfg=248 gui=NONE cterm=NONE
@@ -121,17 +142,25 @@ hi mkdCodeStart guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
 hi mkdCodeEnd guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
 hi mkdLinkDef guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
 hi mkdCodeDelimiter guifg=#637777 ctermfg=243 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
+
+" HTML
 hi htmlH1 guifg=#82aaff ctermfg=111 gui=bold cterm=bold
 hi link htmlH2 htmlH1
 hi link htmlH3 htmlH1
 hi htmlH4 guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi link htmlH5 htmlH4
 hi htmlBold guifg=#c792ea ctermfg=176 guibg=#011627 ctermbg=233 gui=bold cterm=bold
-hi shComment guifg=#637777 ctermfg=243 guibg=#011627 ctermbg=233 gui=italic cterm=italic
-hi gitcommitSummary guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
-hi IndentGuidesOdd guibg=#444444 ctermbg=238 gui=NONE cterm=NONE
-hi IndentGuidesEven guibg=#777777 ctermbg=243 gui=NONE cterm=NONE
+hi htmlTag guifg=#637777 ctermfg=243 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link htmlEndTag htmlTag
 
+" Shell comment
+" TODO: can we remove?
+hi shComment guifg=#637777 ctermfg=243 guibg=#011627 ctermbg=233 gui=italic cterm=italic
+
+
+" Git commit top line
+" TODO: not sure if right color
+hi gitcommitSummary guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
 
 " NERDTree Sidebar
 hi NERDTreeDir guifg=#5f7e97 ctermfg=66 gui=NONE cterm=NONE
