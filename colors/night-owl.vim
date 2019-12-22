@@ -45,22 +45,23 @@ hi EndOfBuffer guifg=#444444 ctermfg=238 guibg=#011627 ctermbg=233 gui=NONE cter
 " https://github.com/sdras/night-owl-vscode-theme/blob/master/themes/Night%20Owl-color-theme.json#L249-L255
 hi Comment guifg=#637777 ctermfg=243 gui=italic cterm=italic
 
-" hi Constant guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
-hi String guifg=#ecc48d ctermfg=222 gui=NONE cterm=NONE
+hi Constant guifg=#ff5874
+hi String guifg=#ecc48d
 hi Number guifg=#F78C6C
 hi Boolean guifg=#ff5874
 
 hi Identifier guifg=#7fdbca
 hi Function guifg=#82aaff gui=italic
 
-hi Statement guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
+hi Statement guifg=#c792ea
 hi Keyword guifg=#c792ea
 hi Exception guifg=#c792ea gui=italic
 
-hi PreProc guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
+hi PreProc guifg=#c792ea gui=italic
 
 hi Type guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
 hi StorageClass guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
+hi Structure guifg=#ffcb8b
 
 hi Todo guifg=#777777 ctermfg=243 guibg=#ecc48d ctermbg=222 gui=NONE cterm=NONE
 
@@ -176,3 +177,6 @@ hi GitGutterDelete guifg=#EF5350 ctermfg=204 gui=NONE cterm=NONE
 hi GitGutterChangeDelete guifg=#e2b93d ctermfg=222 gui=NONE cterm=NONE
 
 " TODO: Diff Editor
+
+" Python
+"
