@@ -144,14 +144,11 @@ hi mkdLinkDef guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
 hi mkdCodeDelimiter guifg=#637777 ctermfg=243 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 
 " HTML
-hi htmlH1 guifg=#82aaff ctermfg=111 gui=bold cterm=bold
-hi link htmlH2 htmlH1
-hi link htmlH3 htmlH1
-hi htmlH4 guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
-hi link htmlH5 htmlH4
-hi htmlBold guifg=#c792ea ctermfg=176 guibg=#011627 ctermbg=233 gui=bold cterm=bold
-hi htmlTag guifg=#637777 ctermfg=243 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link htmlEndTag htmlTag
+" https://notabug.org/jorgesumle/vim-html-syntax
+hi htmlTag guifg=#7fdbca
+hi htmlTagName guifg=#7fdbca
+hi htmlSpecialTagName guifg=#7fdbca
+hi htmlArg guifg=#addb67
 
 " Shell comment
 " TODO: can we remove?
