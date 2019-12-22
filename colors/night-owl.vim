@@ -60,10 +60,15 @@ hi Exception guifg=#c792ea gui=italic
 hi PreProc guifg=#c792ea gui=italic
 
 hi Type guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
-hi StorageClass guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
-hi Structure guifg=#ffcb8b
+hi StorageClass guifg=#c792ea
+hi Structure guifg=#c792ea
 
 hi Todo guifg=#777777 ctermfg=243 guibg=#ecc48d ctermbg=222 gui=NONE cterm=NONE
+
+
+" Custom Highlights
+hi ClassName guifg=#ecc48d
+hi Modifier guifg=#c792ea gui=italic
 
 
 " TODO: Operator mode?
@@ -88,13 +93,13 @@ hi jsFunction guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi jsReturn guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi jsFuncName guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi link jsParensError jsFuncParens
-hi jsClassDefinition guifg=#ecc48d ctermfg=222 gui=NONE cterm=NONE
+hi link jsClassDefinition ClassName
 hi jsImport guifg=#c792ea ctermfg=176 gui=italic cterm=italic
 hi jsFrom guifg=#c792ea ctermfg=176 gui=italic cterm=italic
 hi jsModuleAs guifg=#c792ea ctermfg=176 gui=italic cterm=italic
 hi jsExport guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
 hi jsExportDefault guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi jsExtendsKeyword guifg=#c792ea ctermfg=176 gui=italic cterm=italic
+hi link jsExtendsKeyword Modifier
 hi javaScriptReserved guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi javaScriptConditional guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi javaScriptStringS guifg=#ecc48d ctermfg=222 gui=NONE cterm=NONE
@@ -105,6 +110,14 @@ hi javaScriptSpecial guifg=#f78c6c ctermfg=209 gui=NONE cterm=NONE
 hi javaScriptFunction guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi javaScriptStatement guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi javaScriptException guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
+
+" TypeScript
+hi link typescriptClassName ClassName
+hi link typescriptClassHeritage ClassName
+hi link typescriptClassExtends Modifier
+hi link typescriptImport Modifier
+hi link typescriptExport Modifier
+hi link typescriptCastKeyword Modifier
 
 " CSS
 hi scssSelectorName guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
@@ -178,5 +191,11 @@ hi GitGutterChangeDelete guifg=#e2b93d ctermfg=222 gui=NONE cterm=NONE
 
 " TODO: Diff Editor
 
+" C/C++
+hi cppModifier guifg=#c792ea gui=italic
+
 " Python
-"
+" https://github.com/vim-python/python-syntax/blob/master/syntax/python.vim
+" Seems like there's not a lot that we can highlight, e.g., function calls and
+" class names
+hi pythonBuiltinFunc guifg=#addb67
