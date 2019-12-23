@@ -77,10 +77,10 @@ hi Operator guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 " JavaScript
 hi jsStorageClass guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi jsOperator guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
-hi jsArrowFunction guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
+hi jsArrowFunction guifg=#c792ea
 hi jsString guifg=#ecc48d ctermfg=222 gui=NONE cterm=NONE
 hi jsComment guifg=#637777 ctermfg=243 gui=italic cterm=italic
-hi jsFuncCall guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
+hi jsFuncCall guifg=#82aaff gui=italic
 hi jsNumber guifg=#f78c6c ctermfg=209 gui=NONE cterm=NONE
 hi jsSpecial guifg=#f78c6c ctermfg=209 gui=NONE cterm=NONE
 hi jsObjectProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
@@ -90,10 +90,14 @@ hi jsBooleanTrue guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
 hi jsRegexpString guifg=#5ca7e4 ctermfg=74 gui=NONE cterm=NONE
 hi jsConditional guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi jsFunction guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
+hi link jsNull Constant
+hi link jsUndefined Constant
 hi jsReturn guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi jsFuncName guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi link jsParensError jsFuncParens
 hi link jsClassDefinition ClassName
+hi link jsThis Identifier
+hi link jsSuper Identifier
 hi jsImport guifg=#c792ea ctermfg=176 gui=italic cterm=italic
 hi jsFrom guifg=#c792ea ctermfg=176 gui=italic cterm=italic
 hi jsModuleAs guifg=#c792ea ctermfg=176 gui=italic cterm=italic
@@ -117,7 +121,17 @@ hi link typescriptClassHeritage ClassName
 hi link typescriptClassExtends Modifier
 hi link typescriptImport Modifier
 hi link typescriptExport Modifier
+hi link typescriptDefault Modifier
+hi link typescriptBOM Normal
 hi link typescriptCastKeyword Modifier
+hi typescriptArrowFunc guifg=#c792ea
+hi link typescriptFuncArg Normal
+hi link typescriptArrowFuncArg Normal
+hi link typescriptIdentifier Identifier
+
+" JSX
+hi jsxComponentName guifg=#f78c6c
+hi jsxBraces guifg=#d3423e
 
 " CSS
 hi scssSelectorName guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
