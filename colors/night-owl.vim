@@ -134,33 +134,26 @@ hi jsxComponentName guifg=#f78c6c
 hi jsxBraces guifg=#d3423e
 
 " CSS
-hi scssSelectorName guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
+hi cssProp guifg=#7fdbca
+hi cssUnitDecorators guifg=#fbec9f
+" hi scssSelectorName guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
 hi cssTagName guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
 hi cssClassName guifg=#addb67 ctermfg=149 gui=italic cterm=italic
-hi link cssClassNameDot cssClassName
-hi cssBraces guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
-hi cssPositioningProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssBoxProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssDimensionProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssTransitionProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssTextProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssFontProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssBorderProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssBackgroundProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssUIProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssIEUIProp guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
-hi scssFunctionName guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
-hi cssPositioningAttr guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
-hi cssTableAttr guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
-hi cssCommonAttr guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
-hi cssColorProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssIncludeKeyword guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
-hi cssKeyFrameSelector guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
-hi cssPseudoClassId guifg=#addb67 ctermfg=149 gui=italic cterm=italic
-hi cssBorderAttr guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
-hi cssValueLength guifg=#f78c6c ctermfg=209 gui=NONE cterm=NONE
-hi cssUnitDecorators guifg=#fbec9f ctermfg=229 gui=NONE cterm=NONE
-hi cssIdentifier guifg=#f4d554 ctermfg=221 gui=italic cterm=italic
+hi cssFunctionName guifg=#addb67
+" hi link cssClassNameDot cssClassName
+" hi cssBraces guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
+" hi cssPositioningProp guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
+" hi cssIEUIProp guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
+" hi scssFunctionName guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
+" hi cssPositioningAttr guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
+" hi cssTableAttr guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
+" hi cssCommonAttr guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
+" hi cssIncludeKeyword guifg=#7fdbca ctermfg=116 gui=NONE cterm=NONE
+" hi cssKeyFrameSelector guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
+" hi cssPseudoClassId guifg=#addb67 ctermfg=149 gui=italic cterm=italic
+" hi cssBorderAttr guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
+" hi cssValueLength guifg=#f78c6c ctermfg=209 gui=NONE cterm=NONE
+" hi cssIdentifier guifg=#f4d554 ctermfg=221 gui=italic cterm=italic
 
 " Markdown
 hi markdownHeadingDelimiter guifg=#637777 ctermfg=243 gui=NONE cterm=NONE
@@ -213,3 +206,9 @@ hi cppModifier guifg=#c792ea gui=italic
 " Seems like there's not a lot that we can highlight, e.g., function calls and
 " class names
 hi pythonBuiltinFunc guifg=#addb67
+
+" Ruby
+" https://github.com/vim-ruby/vim-ruby
+hi link rubyModuleName Normal
+hi link rubyClassName ClassName
+hi rubyBlockParameterList guifg=#addb67
