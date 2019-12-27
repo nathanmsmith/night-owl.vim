@@ -43,6 +43,8 @@ hi EndOfBuffer guifg=#444444 ctermfg=238 guibg=#011627 ctermbg=233 gui=NONE cter
 " Statusline
 hi StatusLine guifg=#011627 guibg=#5ca7e4
 hi StatusLineNC guifg=#011627 guibg=#5f7e97
+hi User1 guifg=#82aaff
+hi User2 guifg=#82aaff gui=italic
 
 " Generic language highlighting
 " Comment
@@ -67,7 +69,10 @@ hi Type guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
 hi StorageClass guifg=#c792ea
 hi Structure guifg=#c792ea
 
-hi Todo guifg=#777777 ctermfg=243 guibg=#ecc48d ctermbg=222 gui=NONE cterm=NONE
+hi Error guifg=#EF5350 guibg=NONE
+hi Todo guifg=#EF5350 guibg=NONE
+
+hi SpellBad guifg=#EF5350 gui=undercurl
 
 
 " Custom Highlights
@@ -93,7 +98,6 @@ hi jsBooleanFalse guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
 hi jsBooleanTrue guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
 hi jsRegexpString guifg=#5ca7e4 ctermfg=74 gui=NONE cterm=NONE
 hi jsConditional guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
-hi jsFunction guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi link jsNull Constant
 hi link jsUndefined Constant
 hi jsReturn guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
@@ -112,7 +116,6 @@ hi javaScriptReserved guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi javaScriptConditional guifg=#c792ea ctermfg=176 gui=NONE cterm=NONE
 hi javaScriptStringS guifg=#ecc48d ctermfg=222 gui=NONE cterm=NONE
 hi javaScriptBoolean guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
-hi javaScriptBraces guifg=#d6deeb ctermfg=253 gui=NONE cterm=NONE
 hi javaScriptLineComment guifg=#637777 ctermfg=243 gui=italic cterm=italic
 hi javaScriptSpecial guifg=#f78c6c ctermfg=209 gui=NONE cterm=NONE
 hi javaScriptFunction guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
@@ -132,6 +135,7 @@ hi typescriptArrowFunc guifg=#c792ea
 hi link typescriptFuncArg Normal
 hi link typescriptArrowFuncArg Normal
 hi link typescriptIdentifier Identifier
+hi typescriptTypeReference guifg=#ecc48d
 
 " JSX
 hi jsxComponentName guifg=#f78c6c
