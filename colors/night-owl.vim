@@ -14,6 +14,10 @@ if exists("syntax_on")
 endif
 let g:colors_name="night-owl"
 
+" Main Pallette
+" Background: #011627
+
+
 hi Normal guifg=#d6deeb ctermfg=253 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 hi LineNr guifg=#444444 ctermfg=238 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 hi CursorLine guibg=#112630 ctermbg=235 gui=NONE cterm=NONE
@@ -29,9 +33,7 @@ hi DiffText guifg=#011627 guibg=#addb67 gui=NONE cterm=NONE
 " hi diffAdded guifg=#addb67 ctermfg=149 gui=NONE cterm=NONE
 " hi diffRemoved guifg=#ff5874 ctermfg=204 gui=NONE cterm=NONE
 
-
-
-hi VertSplit guifg=#777777 ctermfg=243 gui=NONE cterm=NONE
+hi VertSplit guifg=#011627 guibg=NONE gui=NONE
 hi Folded guifg=#777777 ctermfg=243 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 hi FoldColumn guifg=#333333 ctermfg=236 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 hi SignColumn guifg=NONE ctermfg=NONE guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
