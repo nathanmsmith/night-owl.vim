@@ -53,10 +53,14 @@ hi StatusLineNC guifg=#011627 guibg=#5f7e97
 hi User1 guifg=#82aaff
 hi User2 guifg=#82aaff gui=italic
 
+" Text width colorcolumn
+hi ColorColumn guibg=#1F2330
+
 " Generic language highlighting
 " Comment
 " https://github.com/sdras/night-owl-vscode-theme/blob/master/themes/Night%20Owl-color-theme.json#L249-L255
 hi Comment guifg=#637777 ctermfg=243 gui=italic cterm=italic
+
 
 hi Constant guifg=#ff5874
 hi String guifg=#ecc48d
