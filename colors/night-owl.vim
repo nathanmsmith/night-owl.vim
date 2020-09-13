@@ -48,6 +48,8 @@ hi Title guifg=#82aaff ctermfg=111 gui=bold cterm=bold
 hi Visual guifg=#d6deeb ctermfg=253 guibg=#2d2c5d ctermbg=236 gui=NONE cterm=NONE
 hi EndOfBuffer guifg=#444444 ctermfg=238 guibg=#011627 ctermbg=233 gui=NONE cterm=NONE
 
+hi MatchParen guifg=#ef5350 guibg=NONE gui=bold
+
 " Statusline
 hi StatusLine guifg=#011627 guibg=#5ca7e4
 hi StatusLineNC guifg=#011627 guibg=#5f7e97
