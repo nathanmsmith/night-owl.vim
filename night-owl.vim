@@ -1,1 +1,1 @@
-/Users/nathan/Developer/night-owl.vim/
+/Users/nathan/Developer/vim-packages/night-owl.vim/
