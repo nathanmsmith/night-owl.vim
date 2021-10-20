@@ -237,3 +237,14 @@ hi pythonBuiltinFunc guifg=#addb67
 hi link rubyModuleName Normal
 hi link rubyClassName ClassName
 hi rubyBlockParameterList guifg=#addb67
+
+" nvim LSP diagnostic
+hi LspDiagnosticsDefaultError guifg=#EF5350
+hi LspDiagnosticsDefaultWarning guifg=#F78C6C
+hi LspDiagnosticsDefaultInformation guifg=#82aaff
+hi LspDiagnosticsDefaultHint guifg=#82aaff
+
+hi LspDiagnosticsUnderlineError guifg=#EF5350 gui=undercurl
+hi LspDiagnosticsUnderlineWarning guifg=#F78C6C gui=undercurl
+hi LspDiagnosticsUnderlineInformation guifg=#82aaff gui=undercurl
+hi LspDiagnosticsUnderlineHint guifg=#82aaff gui=undercurl
