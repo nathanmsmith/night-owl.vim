@@ -248,3 +248,10 @@ hi LspDiagnosticsUnderlineError guifg=#EF5350 gui=undercurl
 hi LspDiagnosticsUnderlineWarning guifg=#F78C6C gui=undercurl
 hi LspDiagnosticsUnderlineInformation guifg=#82aaff gui=undercurl
 hi LspDiagnosticsUnderlineHint guifg=#82aaff gui=undercurl
+
+" Conflict markers: https://github.com/rhysd/conflict-marker.vim
+highlight ConflictMarkerBegin guibg=#567f9a
+highlight ConflictMarkerOurs guibg=#1f4055
+highlight ConflictMarkerTheirs guibg=#0f1f3f
+highlight ConflictMarkerEnd guibg=#2b2a5e
+highlight ConflictMarkerCommonAncestorsHunk guibg=#754a81
