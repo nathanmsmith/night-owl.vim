@@ -26,6 +26,7 @@ hi CursorLineNr guifg=#aaaaaa ctermfg=248 guibg=#112630 ctermbg=235 gui=NONE cte
 hi ColorColumn guibg=#222222 ctermbg=235 gui=NONE cterm=NONE
 hi Directory guifg=#82aaff ctermfg=111 gui=NONE cterm=NONE
 hi Special guifg=#F78C6C gui=NONE
+hi Conceal guifg=#20395d guibg=NONE
 hi link Delimiter NONE
 
 
